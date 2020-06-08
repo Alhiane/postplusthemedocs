@@ -9,10 +9,10 @@ html {
 }
 body {
   font-family: "Tajawal";
+  background: #f9f9f9;
 }
 header {
-  background-image: url("../img/cover.png");
-  height: 500px;
+  height: 600px;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -29,13 +29,7 @@ header::after {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgb(0, 172, 255);
-  background: radial-gradient(
-    circle,
-    rgba(0, 172, 255, 1) 0%,
-    rgba(45, 46, 55, 0.8715861344537815) 56%,
-    rgba(37, 36, 43, 1) 100%
-  );
+  background: #fff;
 }
 
 nav {
@@ -43,10 +37,18 @@ nav {
   z-index: 9;
   text-align: center;
 }
-nav p {
+nav p.nt1 {
   margin-bottom: 12px;
-  color: #fff;
   font-size: 21px;
+  font-weight: bold;
+  margin: 20px auto;
+  color: #00d2ff;
+}
+nav p.nt2 {
+  color: #273e67;
+  font-weight: 500;
+  padding: 0px 80px;
+  margin-bottom: 40px;
 }
 header .btns {
   display: flex;
@@ -65,9 +67,15 @@ header .btns button {
   cursor: pointer;
 }
 header nav img {
-  filter: drop-shadow(2px 0px 3px green) brightness(0.5);
   margin-bottom: 20px;
-  -webkit-filter: drop-shadow(2px 0px 3px green) brightness(0.5);
+  /* background: #f9f9f9; */
+  /* border-radius: 50%; */
+  padding: 48px 10px;
+  border: 1px solid #0da7c866;
+  /* -webkit-border-radius: 50%; */
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 main {
@@ -167,13 +175,18 @@ section#faces {
   flex-wrap: wrap;
   margin-top: 60px;
   overflow: hidden;
+  width: 85%;
+  margin: 60px auto;
 }
 .items .item {
-  flex: 0 0 33.33%;
-  padding: 25px;
+  flex: 0 0 29.33%;
+  margin: 2%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 .items .item .thumb {
-  height: 400px;
+  height: 300px;
   overflow: hidden;
   position: relative;
 }
@@ -189,16 +202,11 @@ section#faces {
 .thumb::after {
   content: " ";
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  height: 100%;
+  height: 1%;
   width: 100%;
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 0.15) 0%,
-    rgba(45, 46, 55, 0.28) 86%,
-    rgba(18, 18, 19, 0.33) 100%
-  );
+  background: radial-gradient( circle, rgba(0, 0, 0, 0.15) 0%, rgba(45, 46, 55, 0.28) 86%, rgba(18, 18, 19, 0.33) 100% );
 }
 
 .items .item .thumb:hover img {
@@ -226,11 +234,11 @@ section#faces {
   font-size: 20px;
   text-align: center;
   padding: 20px 0;
-  background: #03a9f4;
+  color: #03a9f4;
   height: 87px;
   display: flex;
   flex-direction: column;
-  color: #fff;
+  background: #fff;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 .items .item .det span {
@@ -238,17 +246,16 @@ section#faces {
 }
 .thumb a {
   position: absolute;
-  top: 40px;
+  bottom: 6px;
   left: 50%;
-  background: #03a9f47d;
+  background: #03A9F4;
   z-index: 9;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   padding: 5px 13px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   transform: translate(-50%, 10px);
   font-size: 15px;
-  border: 2px solid #fffc;
   -webkit-transform: translate(-50%, 10px);
   -moz-transform: translate(-50%, 10px);
   -ms-transform: translate(-50%, 10px);
@@ -268,6 +275,7 @@ section#faces {
   text-align: center;
   margin: 0 auto;
   cursor: pointer;
+  z-index: 99999;
 }
 #Down a button {
   background: #fff;
@@ -280,8 +288,7 @@ section#Down::after {
   content: "\e9d7";
   font-family: IcoFont;
   color: #03a9f5;
-  width: 250px;
-  height: 250px;
+  width: 250px;  
   position: absolute;
   top: -70px;
   left: 50%;
