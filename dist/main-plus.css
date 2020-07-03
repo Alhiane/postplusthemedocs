@@ -110,7 +110,7 @@ section#feau {
   flex-wrap: wrap;
   /* padding: 120px 0; */
   /* z-index: 9; */
-  padding: 120px 50px;  
+  padding: 120px 50px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -133,7 +133,7 @@ section#feau {
   background: -webkit-linear-gradient(to right, #f9d423, #ff4e50);
   background: linear-gradient(to right, #f9d423, #ff4e50);
   color: #fff;
-  padding: 20px 2;
+  padding: 20px 2px;
 }
 
 .icon {
@@ -149,7 +149,7 @@ section#feau {
   justify-content: center;
 }
 .icon i {
-  color: #FF4E50;
+  color: #ff4e50;
 }
 section#faces {
   /* z-index: 9; */
@@ -172,9 +172,17 @@ section#faces {
 }
 #faces h2::before {
   content: "";
-  background: #FF4E50;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ff4e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   height: 9px;
   width: 50px;
@@ -303,9 +311,17 @@ background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, F
 #Down {
   text-align: center;
   padding: 50px 120px;
-  background: #FF4E50;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ff4e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   color: #fff;
   font-size: 24px;
@@ -327,4 +343,5 @@ background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, F
   border-radius: 5px;
   font-family: "tajawal";
   font-size: 20px;
+  cursor: pointer;
 }
