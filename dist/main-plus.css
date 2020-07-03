@@ -12,11 +12,8 @@ body {
   background: #f9f9f9;
 }
 header {
-  height: 600px;
   background-size: cover;
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
   background-attachment: fixed;
   box-shadow: inset 1px -10px 20px 20px black;
@@ -33,9 +30,14 @@ header::after {
 }
 
 nav {
-  padding: 5px 100px;
+  padding: 5px 80px;
   z-index: 9;
   text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 nav p.nt1 {
   margin-bottom: 12px;
@@ -50,6 +52,9 @@ nav p.nt2 {
   padding: 0px 80px;
   margin-bottom: 40px;
 }
+nav img {
+  filter: hue-rotate(164deg);
+}
 header .btns {
   display: flex;
   flex-direction: row-reverse;
@@ -57,28 +62,38 @@ header .btns {
 }
 
 header .btns button {
-  background: #2229;
+  background: #ff4e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   margin: 5px;
   padding: 10px 20px;
   color: #fff;
   border: 1px solid transparent;
   font-family: "Tajawal";
-  border-bottom: 2px solid #eee;
   cursor: pointer;
-}
-header nav img {
-  margin-bottom: 20px;
-  /* background: #f9f9f9; */
-  /* border-radius: 50%; */
-  padding: 48px 10px;
-  border: 1px solid #0da7c866;
-  /* -webkit-border-radius: 50%; */
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
 }
 
 main {
+  background: #ff4e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 section#feau::after {
   top: 0;
@@ -95,15 +110,15 @@ section#feau {
   flex-wrap: wrap;
   /* padding: 120px 0; */
   /* z-index: 9; */
-  padding: 120px 50px;
-  background: url(../img/cover.png);
+  padding: 120px 50px;  
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   background-position: bottom;
 }
 .fau-s {
-  flex: 0 0 25%;
+  flex: 1 1 21%;
+  margin: 2%;
   text-align: center;
   display: flex;
   flex-direction: column-reverse;
@@ -112,24 +127,29 @@ section#feau {
 }
 .tag {
   font-family: "Tajawal";
-  font-size: 25px;
-  margin-top: 25px;
+  font-size: 22px;
+  /* margin-top: 25px; */
+  background: #ff4e50;
+  background: -webkit-linear-gradient(to right, #f9d423, #ff4e50);
+  background: linear-gradient(to right, #f9d423, #ff4e50);
+  color: #fff;
+  padding: 20px 2;
 }
 
 .icon {
   font-size: 50px;
-  margin: 15px;
+  /* margin: 15px; */
+  background: #fff;
+  overflow: hidden;
+  /* color: #222; */
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .icon i {
-  background: radial-gradient(
-    circle,
-    rgba(0, 172, 255, 1) 0%,
-    #03a9f4 56%,
-    rgba(0, 188, 212, 0.46) 100%
-  );
-  padding: 22px 26px;
-  border-radius: 50%;
-  color: #fff;
+  color: #FF4E50;
 }
 section#faces {
   /* z-index: 9; */
@@ -138,10 +158,11 @@ section#faces {
 #faces h2 {
   text-align: center;
   position: relative;
+  color: #fff;
 }
 #faces h2::after {
   content: "";
-  background: #03a9f4;
+  background: #fff;
   height: 4px;
   width: 300px;
   position: absolute;
@@ -151,7 +172,10 @@ section#faces {
 }
 #faces h2::before {
   content: "";
-  background: #03a9f4;
+  background: #FF4E50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   height: 9px;
   width: 50px;
   position: absolute;
@@ -199,15 +223,6 @@ section#faces {
   transition: 5s;
   top: 0;
 }
-.thumb::after {
-  content: " ";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 1%;
-  width: 100%;
-  background: radial-gradient( circle, rgba(0, 0, 0, 0.15) 0%, rgba(45, 46, 55, 0.28) 86%, rgba(18, 18, 19, 0.33) 100% );
-}
 
 .items .item .thumb:hover img {
   top: -250%;
@@ -234,11 +249,21 @@ section#faces {
   font-size: 20px;
   text-align: center;
   padding: 20px 0;
-  color: #03a9f4;
+  color: #fff;
   height: 87px;
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: #ff4e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 .items .item .det span {
@@ -246,25 +271,42 @@ section#faces {
 }
 .thumb a {
   position: absolute;
-  bottom: 6px;
+  bottom: 16px;
   left: 50%;
-  background: #03A9F4;
+  background: #ff4e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   z-index: 9;
   text-decoration: none;
   color: #ffffff;
   padding: 5px 13px;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   transform: translate(-50%, 10px);
   font-size: 15px;
   -webkit-transform: translate(-50%, 10px);
   -moz-transform: translate(-50%, 10px);
   -ms-transform: translate(-50%, 10px);
   -o-transform: translate(-50%, 10px);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 #Down {
   text-align: center;
   padding: 50px 120px;
-  background: #03a9f5;
+  background: #FF4E50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: #fff;
   font-size: 24px;
   position: relative;
@@ -283,18 +325,6 @@ section#faces {
   margin-top: 15px;
   border: 2px solid #fff;
   border-radius: 5px;
-}
-section#Down::after {
-  content: "\e9d7";
-  font-family: IcoFont;
-  color: #03a9f5;
-  width: 250px;  
-  position: absolute;
-  top: -70px;
-  left: 50%;
-  transform: translate(-50%, -19px);
-  border-radius: 50%;
-  text-align: center;
-  font-size: 117px;
-  text-shadow: 0 0 8px #fff;
+  font-family: "tajawal";
+  font-size: 20px;
 }
