@@ -53,7 +53,7 @@ nav p.nt2 {
   margin-bottom: 40px;
 }
 nav img {
-  filter: hue-rotate(164deg);
+  filter: hue-rotate(-339deg);
 }
 header .btns {
   display: flex;
@@ -62,38 +62,21 @@ header .btns {
 }
 
 header .btns button {
-  background: #ff4e50; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #f9d423,
-    #ff4e50
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #f9d423,
-    #ff4e50
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
   margin: 5px;
-  padding: 10px 20px;
-  color: #fff;
-  border: 1px solid transparent;
-  font-family: "Tajawal";
-  cursor: pointer;
+    padding: 10px 20px;
+    color: #528fff;
+    border: 1px solid #4e8dff;
+    font-family: "Tajawal" ,sans-serif;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 main {
-  background: #ff4e50; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #f9d423,
-    #ff4e50
-  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #f9d423,
-    #ff4e50
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    #273e67,
+    #528fff
+  );
 }
 section#feau::after {
   top: 0;
@@ -129,9 +112,7 @@ section#feau {
   font-family: "Tajawal";
   font-size: 22px;
   /* margin-top: 25px; */
-  background: #ff4e50;
-  background: -webkit-linear-gradient(to right, #f9d423, #ff4e50);
-  background: linear-gradient(to right, #f9d423, #ff4e50);
+  background: linear-gradient(to right, #3960a6, #2f4d83);
   color: #fff;
   padding: 20px 2px;
 }
@@ -149,7 +130,7 @@ section#feau {
   justify-content: center;
 }
 .icon i {
-  color: #ff4e50;
+  color: #518dfc;
 }
 section#faces {
   /* z-index: 9; */
@@ -172,17 +153,11 @@ section#faces {
 }
 #faces h2::before {
   content: "";
-  background: #ff4e50; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #f9d423,
-    #ff4e50
-  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #f9d423,
-    #ff4e50
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    #00d2ff,
+    #4e8dff
+  );
 
   height: 9px;
   width: 50px;
@@ -211,7 +186,7 @@ section#faces {
   margin: 60px auto;
 }
 .items .item {
-  flex: 0 0 29.33%;
+  flex: 0 0 20.33%;
   margin: 2%;
   border-radius: 15px;
   overflow: hidden;
@@ -254,25 +229,16 @@ section#faces {
   );
 }
 .items .item .det {
-  font-size: 20px;
-  text-align: center;
-  padding: 20px 0;
-  color: #fff;
-  height: 87px;
-  display: flex;
-  flex-direction: column;
-  background: #ff4e50; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #f9d423,
-    #ff4e50
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #f9d423,
-    #ff4e50
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0;
+    color: #518cf9;
+    font-weight: bolder;
+    height: 87px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient( to right, #efefef, #efefef );
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%) !important;
 }
 .items .item .det span {
   font-size: 15px;
@@ -281,16 +247,10 @@ section#faces {
   position: absolute;
   bottom: 16px;
   left: 50%;
-  background: #ff4e50; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #f9d423,
-    #ff4e50
-  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #f9d423,
-    #ff4e50
+    #508bf8,
+    #273e67
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   z-index: 9;
   text-decoration: none;
@@ -311,16 +271,10 @@ section#faces {
 #Down {
   text-align: center;
   padding: 50px 120px;
-  background: #ff4e50; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #f9d423,
-    #ff4e50
-  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #f9d423,
-    #ff4e50
+    #335490,
+    #3960a6
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   color: #fff;
