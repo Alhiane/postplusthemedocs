@@ -134,7 +134,7 @@ section#feau {
 }
 section#faces {
   /* z-index: 9; */
-  padding: 60px 50px 120px;
+  padding: 60px 0px 120px;
 }
 #faces h2 {
   text-align: center;
@@ -301,5 +301,5 @@ section#faces {
 }
 @media only screen and (max-width: 520px) {
   .items .item{
-  flex: 0 0 45.33%;}
+  flex: 0 0 100%;}
 }
